@@ -57,6 +57,8 @@ class Countdown(tk.Tk):
         self.bind('<Control-Key-1>', self.bot_greeting)
         self.bind('<Control-Key-2>', self.bot_danger_alert)
         self.bind('<Control-h>', self.adventure_music)
+        self.bind('<Control-u>', self.error1)
+        self.bind('<Control-o>', self.error2)
         self.bind('<Control-t>', self.bg_music_toggle)
         self.bind('<Control-c>', self.open_hint_wnd)
         self.bind('<Control-p>', self.close_hint_wnd)
