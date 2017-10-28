@@ -30,7 +30,7 @@ class Countdown(tk.Tk):
         self.current_background = self.empty_blue
         blank = ImageTk.PhotoImage(Image.open("Blank.png"))
         # Background Image:
-        self.background_label = tk.Label(self, image=self.empty_blue)
+        self.background_label = tk.Label(self, image=self.empty_blue_happy_text)
         self.background_label.place(x=0, y=0, relwidth=1, relheight=1)
         # Default Settings
         self.wm_attributes("-fullscreen", True)
@@ -51,8 +51,7 @@ class Countdown(tk.Tk):
         self.bind('<Escape>', self.escape_key)
         self.bind('<Control-b>', self.start_game)
         self.bind('<Control-s>', self.stop_timer)
-
-        self.bind('<Control-q>', self.happy_bot)
+        self.bind('<Control-q>', self.happy_bot_text)
         self.bind('<Control-w>', self.evil_screen)
         self.bind('<Control-e>', self.evil_bot)
         self.bind('<Control-Key-1>', self.bot_greeting)
@@ -137,17 +136,25 @@ class Countdown(tk.Tk):
 
     def bot_greeting(self,event):
         # changes the screen to provide levels of fuel, doors, etc.
-        self.happy_bot_text(self)
+        # self.happy_bot_text(self) # Press Control-Q before Control-1
+        pygame.mixer.set_num_channels(8)
+        sound_channel = pygame.mixer.Channel(5)
+
         sound1 = pygame.mixer.Sound("corevo-a2-Alex.wav")
         sound1.set_volume(1.0)
-        sound1.play()
+        sound_channel.play(sound1)
+        SOUND1_END = pygame.USEREVENT + 1
+        sound_channel.set_endevent(SOUND1_END)
+        playing = True
+        while playing:
+            for event in pygame.event.get():
+                if event.type == SOUND1_END:
+                    pygame.time.wait(2000) # waits 5 seconds
+                    self.bot_danger_alert(self)
+                    playing = False
 
     def bot_danger_alert(self,event):
-        self.evil_screen(self)
         self.evil_bot(self)
-        for i in range(50):
-            self.error1(self)
-            self.error2(self)
         sound1 = pygame.mixer.Sound("core-voice-2.wav")
         sound1.set_volume(1.0)
         sound1.play()
@@ -172,7 +179,8 @@ class Countdown(tk.Tk):
 
     # Opens up the hint window.
     def open_hint_wnd(self,event):
-        self.background_sound.set_volume(0)
+        if self.background_sound:
+            self.background_sound.set_volume(0)
         static = pygame.mixer.Sound("static.wav")
         static.set_volume(1.0)
         static.play()
@@ -188,6 +196,12 @@ class Countdown(tk.Tk):
     # Resets the clock
     def reset_clock(self,event):
         self.remaining = 1800
+        if self.start:
+            self.start = False
+        self.label.configure(text= "%02d:%02d:%02d" % (0,30,0),
+                             background="black", foreground=self.foreground_color,
+                             font=("Calibri", 44))
+
 
 if __name__ == "__main__":
     app = Countdown()
