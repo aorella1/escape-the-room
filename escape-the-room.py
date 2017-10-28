@@ -195,6 +195,13 @@ class Countdown(tk.Tk):
 
     # Resets the clock
     def reset_clock(self,event):
+        x = self.remaining
+        seconds = x % 60
+        x //= 60
+        minutes = x % 60
+        x //= 60
+        hours = x % 24
+        print("Finished Game Ended:","%02d:%02d:%02d" % (hours,minutes,seconds))
         self.remaining = 1800
         if self.start:
             self.start = False
