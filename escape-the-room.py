@@ -145,6 +145,9 @@ class Countdown(tk.Tk):
     def bot_danger_alert(self,event):
         self.evil_screen(self)
         self.evil_bot(self)
+        for i in range(50):
+            self.error1(self)
+            self.error2(self)
         sound1 = pygame.mixer.Sound("core-voice-2.wav")
         sound1.set_volume(1.0)
         sound1.play()
