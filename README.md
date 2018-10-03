@@ -1,6 +1,9 @@
 # :unlock: Escape the Room: Lost in Space
 ![Escape the Room Dashboard](https://github.com/adamnieto/escape-the-room/blob/master/escape-the-room.png)
 ---
+## About
+This is a dashboard for an Escape the Room game created by the CoRE (Computers, Robotics, and Engineering) Learning community at Binghamton University. It was used to interactive with players in the room as well as provide hints and tell the story of the game. 
+
 ## Getting Started:
 Please complete the following steps:
 ### Step 1: 
