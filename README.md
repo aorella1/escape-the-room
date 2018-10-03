@@ -52,3 +52,8 @@ Then execute the command, `python3 escape-the-room.py`to run the program.
 | Control + r | Resets the clock|
 
 ---
+## Creators
+* Alex Orellana
+* Santos Acosta
+* Adam Nieto
+* Samantha Kustin
