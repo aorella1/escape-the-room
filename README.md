@@ -1,15 +1,33 @@
-# Escape the Room: Lost in Space
-
-
+# :unlock: Escape the Room: Lost in Space
+![Escape the Room Dashboard](https://github.com/adamnieto/escape-the-room/blob/master/escape-the-room.png)
+---
 ## Getting Started:
-* **Step 1:** You must do the following to install python and pygame
-* **Step 2:** Mac Users: Go to this link to download Python https://www.python.org/ftp/python/3.6.3/python-3.6.3-macosx10.6.pkg
-* **Step 3:** Download the zip of this repo by pressing the the green "clone or download" green button on this page. 
-* **Step 4:** Download pygame by going to your terminal and typing in `pip3 install pygame`.
-* **Step 5:** Get the background.wav go to https://drive.google.com/file/d/0B9vFGDJTs9qNV01oT3g4aEl5cEk/view?usp=sharing and then put it in the escape the room folder and also download the epcot music for space adventure https://drive.google.com/file/d/0B9vFGDJTs9qNaHN5el9VV1g3UHM/view?usp=sharing.
-* **Step 6:** Go back to your terminal and execute the command `cd escape-the-room`.
-* **Step 7:** Then execute the command `python3 escape-the-room.py`to run te program.
+Please complete the following steps:
+### Step 1: 
+If you have not already, install Python. 
+You can go to https://www.python.org/downloads/ and download Python 3.6.3. 
 
+### Step 2: 
+Once you install python you need to install pygame. 
+You can do this by running the following command on your terminal
+```
+python3 -m pip install pygame
+```
+### Step 3: 
+Download the zip of this repo by pressing the the green "clone or download" green button on this page. 
+You can also run the command `git clone` with this URL to download the repo as well.
+
+### Step 4:
+  * Make sure to download the `background.wav` file which is available via this link https://drive.google.com/file/d/0B9vFGDJTs9qNV01oT3g4aEl5cEk/view?usp=sharing. 
+  Once downloaded make sure to place the file in the escape-the-room folder. 
+  * Also, make sure to download the `happy_space.wav`sound file available here https://drive.google.com/file/d/0B9vFGDJTs9qNaHN5el9VV1g3UHM/view?usp=sharing. 
+  Once downloaded make sure to place the file in the escape-the-room folder. 
+  
+### Step 5: 
+Go back to your terminal and execute the command `cd escape-the-room`. 
+Then execute the command, `python3 escape-the-room.py`to run te program.
+  
+---
 ## Keyboard Commands
 | Command | Description |
 | --- | --- |
