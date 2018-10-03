@@ -2,7 +2,10 @@
 ![Escape the Room Dashboard](https://github.com/adamnieto/escape-the-room/blob/master/escape-the-room.png)
 ---
 ## About
-This is a dashboard for an Escape the Room game created by the CoRE (Computers, Robotics, and Engineering) Learning community at Binghamton University. It was used to interactive with players in the room as well as provide hints and tell the story of the game. 
+This is a dashboard for an Escape the Room game created by the CoRE (Computers, Robotics, and Engineering) Learning community at Binghamton University. It was used to interactive with players in the room as well as provide hints and tell the story of the game.
+
+## Story: 
+You are in a space and on space ship that contains a virtual robot assistant named CoREvo. Everything is going well, when all of a sudden CoREvo starts to act up and malfunction. On the dashboard you start to see oxygen levels, and fuel levels to deplete. The only way to get safely back home is to solve puzzles and reset CoREvo. Time is running out, you only have 30 minutes.
 
 ## Getting Started:
 Please complete the following steps:
