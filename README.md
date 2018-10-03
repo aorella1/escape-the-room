@@ -39,7 +39,7 @@ Then execute the command, `python3 escape-the-room.py`to run the program.
 ## Keyboard Commands
 | Command | Description |
 | --- | --- |
-| Control + b | Starts the game by turing on the timer |
+| Control + b | Starts the game by turning on the timer |
 | Control + s | Stops the clock |
 | Control + q | Shows the happy robot (CoREvo) dashboard |
 | Control + w | Shows the evil screen malfunction dashboard (without CoREvo) |
