@@ -5,10 +5,12 @@
 Please complete the following steps:
 ### Step 1: 
 If you have not already, install Python. 
+
 You can go to https://www.python.org/downloads/ and download Python 3.6.3. 
 
 ### Step 2: 
 Once you install python you need to install pygame. 
+
 You can do this by running the following command on your terminal
 ```
 python3 -m pip install pygame
@@ -25,7 +27,7 @@ You can also run the command `git clone` with this URL to download the repo as w
   
 ### Step 5: 
 Go back to your terminal and execute the command `cd escape-the-room`. 
-Then execute the command, `python3 escape-the-room.py`to run te program.
+Then execute the command, `python3 escape-the-room.py`to run the program.
   
 ---
 ## Keyboard Commands
