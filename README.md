@@ -41,7 +41,7 @@ Then execute the command, `python3 escape-the-room.py`to run the program.
 | Control + q | Shows the happy robot (CoREvo) dashboard |
 | Control + w | Shows the evil screen malfunction dashboard (without CoREvo) |
 | Control + e | Shows evil robot (CoREvo) |
-| Control + 1 | Plays the greeting the robot CoREVo gives when meeting the players|
+| Control + 1 | Plays the greeting the robot CoREvo gives when meeting the players|
 | Control + 2 | Plays the danger alert (CoREvo malfunctioning and being incoherent)|
 | Control + h | Plays the music for when the players win the game|
 | Control + u | Show an error screen 1 (for when CoREvo malfunctions) |
